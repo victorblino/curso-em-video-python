@@ -1,3 +1,3 @@
 # curso-em-video-python
 
-Aprendendo Python Foda 😎😎😎
+Cursando Python pelo curso de Python do (Curso em Vídeo)[https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ]
