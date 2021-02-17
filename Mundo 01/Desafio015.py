@@ -8,3 +8,4 @@ valor = (dAlugados*60) + (kmAndados*0.15)
 #print('Você irá ter que pagar: R${:.2f}'.format(valor))
 print(f'Você irá ter que pagar: R${valor:.2f}') #valeu nava
 
+    
