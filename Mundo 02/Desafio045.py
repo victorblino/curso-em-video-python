@@ -1,6 +1,7 @@
 #Desafio 045
 
 from random import choice
+from time import sleep
 
 print('Jokenpo!')
 
@@ -11,25 +12,54 @@ pessoa = int(input("""Escolha uma opção:
 Opção: 
 """))
 
-lista = ['pedra', 'papel' , 'tesoura']
+print('Pedra!')
+sleep(1)
+
+print('Papel!')
+sleep(1)
+
+print('Tesoura!')
+sleep(1)
+
+
+lista = ['Pedra', 'Papel' , 'Tesoura']
 
 pc = choice(lista)
 
+print(f'Escolha do computador: {pc}')
 
-#computador ganha
-if pessoa == 1 and pc == 'papel':
-    print(f'O computador ganhou! Ele escolheu {pc}!')
-elif pessoa == 2 and pc == 'tesoura':
-    print(f'O computador venceu! Ele escolheu {pc}!')
-elif pessoa == 3 and pc == 'pedra':
-    print(f'O computador venceu! Ele escolheu {pc}!')
-#pessoa ganha
-elif pessoa == 2 and pc == 'pedra':
-    print(f'Parabéns, você ganhou! O computador escolheu {pc}!')
-elif pessoa == 3 and pc == 'papel':
-    print(f'Parabéns, você venceu! O computador escolheu {pc}!')
-elif pessoa == 1 and pc == 'tesoura':
-    print(f'Parabéns você venceu! O computador escolheu {pc}!')
+
+if pc == 'Pedra':
+    if pessoa == 1:
+        print('Escolha do usuário: Pedra')
+        print('Empate!')
+    elif pessoa == 2:
+        print('Escolha do usuário: Papel')
+        print('O usuário ganhou!')
+    elif pessoa == 3:
+        print('Escolha do usuário: Tesoura')
+        print('O computador ganhou!')
+elif pc == 'Papel':
+    if pessoa == 1:
+        print('Escolha do usuário: Pedra')
+        print('O computador ganhou!')
+    elif pessoa == 2:
+        print('Escolha do usuário: Papel')
+        print('Empate!')
+    elif pessoa == 3:
+        print('Escolha do usuário: Tesoura')
+        print('O usuário ganhou!')
+elif pc == 'Tesoura':
+    if pessoa == 1:
+        print('Escolha do usuário: Pedra')
+        print('O usuário ganhou!')
+    elif pessoa == 2:
+        print('Escolha do usuário: Papel')
+        print('O computador ganhou!')
+    elif pessoa == 3:
+        print('Escolha do usuário: Tesoura')
+        print('Empate!')
 else:
-    print('Empate! Nenhum dos dois venceram!')
+    print('Opção inválida! Tente novamente.')
+
 
