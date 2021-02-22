@@ -61,5 +61,3 @@ elif pc == 'Tesoura':
         print('Empate!')
 else:
     print('Opção inválida! Tente novamente.')
-
-
